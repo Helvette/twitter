@@ -5,42 +5,64 @@
 	<title>Twitter</title>
 	<!-- Link al CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- link íconos -->
+	<script src="https://use.fontawesome.com/69bfbe7ab9.js"></script>
 </head>
 <body>
 	<!-- barra arriba -->
 	<header>
-		<h1>Twitter</h1>
+		<!-- barra de navegación: Inicio, Notificaciones, Mensajes -->
+		<ul>
+			<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a></li>
+			<li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i> Notificaciones</a></li>
+			<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Mensajes</a></li>
+		</ul>
+
+		<!-- Logo de Twitter -->
+		<a href="#" id="logo-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+		<!-- Búsqueda -->
+		<input type="text" placeholder="Buscar en Twitter">
+
+		<!-- Perfil -->
+		<img src="assets/images/profile-photo.jpg" alt="">
 	</header>
 
-	<div id="contenedor-top">
+	
 		<aside>
 			<!-- info del perfil -->
-			<img src="" alt="Foto de Perfil">
-			<h3>Nombre</h3>
-			<sub>@NombreDeLaCuenta</sub>
-			<p>descripción</p>
-			<sub>datos</sub>
-			<sub>datos</sub>
-			<sub>datos</sub>
+			<img src="assets/images/profile-photo.jpg" alt="Foto de Perfil">
+			<h3>Leticia Ferreira</h3>
+			<sup><a href="#">@Helvette</a></sup>
+			<p>Hi! I'm a coder in progress at <a href="#">@Laboratoria</a>, I love art, technology and 2D guys.</p>
+			<hr>
+			<sub><i class="fa fa-map-marker" aria-hidden="true"></i> Santiago, Chile</sub>
+			<sub><i class="fa fa-link" aria-hidden="true"></i> <a href="#">Github</a></sub>
+			<sub><i class="fa fa-calendar" aria-hidden="true"></i> Se unió en septiembre del 2017</sub>
 		</aside>
+	
+	
+	
 
-		<section>
+		<section id="estado">
 			<!-- formulario -->
-			<textarea name="textarea" id="estado" rows="3" placeholder="¿Qué estás pensando?"></textarea>
-			<button>Enviar</button>
+			<textarea name="textarea" class="autoExpand" rows="3" placeholder="¿Qué estás pensando?"></textarea>
+			<button disabled="disabled">Enviar</button>
 			<div id="div-contador">
 				<span id="contador">140</span>	
 			</div>
 		</section>
-	</div>
+	
 
 
-	<section id="contenedor-bottom">
-		<!-- estados article -->
-	</section>
+		<section id="contenedor-bottom">
+			<!-- estados article -->
+		</section>
 
+	
 
 	<!-- Link al JS -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 </html>
